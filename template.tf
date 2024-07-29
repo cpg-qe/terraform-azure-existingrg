@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "main" {
-  name     = var.existing_resource_group_name  # Replace with your existing resource group name
+  name     = var.resourceGroup  # Replace with your existing resource group name
 }
 
 resource "azurerm_virtual_network" "main" {
