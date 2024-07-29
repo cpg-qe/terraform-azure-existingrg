@@ -13,9 +13,16 @@ variable "clientId" {}
 //variable "clientSecret" {}
 variable "clientSecret" {}
 //variable "clientSecret" {}
-variable "resourceGroup" {
-  default     = "ComplexVarTestRG"
+//variable "resourceGroup" {
+//  default     = "ComplexVarTestRG"
+//}
+
+variable "use_existing_resource_group" {
+  description = "Flag to decide whether to use an existing resource group"
+  type        = bool
+  default     = false
 }
+
 variable "tenantId" {}
 variable "diskSizeInGB" {
 
