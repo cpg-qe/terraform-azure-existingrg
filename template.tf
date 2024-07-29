@@ -1,5 +1,6 @@
 resource "azurerm_resource_group" "main" {
   name     = var.resourceGroup  # Replace with your existing resource group name
+  location = "${var.region}"
 }
 
 resource "azurerm_virtual_network" "main" {
